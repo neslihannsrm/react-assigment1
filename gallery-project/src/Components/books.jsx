@@ -7,12 +7,11 @@ import book6 from "../assets/little-women-cover.jpg";
 import "../books.css";
 
 function Books(props) {
-    const { title = "Unknown Title", price = "N/A", image = book1 } = props; // Varsayılan değerler
     return (
-        <div className="book">
-            <img src={image} alt={title} className="img"></img>
-            <h2 className="title">{title}</h2>
-            <p className="price">{price}</p>
+        <div className="books">
+            <img src={props.image} alt={props.title} className="img"></img>
+            <h2 className="title">{props.title || "title"}</h2>
+            <p className="price">{props.price || "price"}</p>
         </div>
     );
 }
