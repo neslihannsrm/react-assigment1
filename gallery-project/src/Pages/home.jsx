@@ -1,21 +1,22 @@
-function Home(){
+import {useState} from 'react'
 
-    let count = 0;
-    const handleEvent = (name) => {
-       if (count < 3) {
-        count++
-        console.log(`${name} you clicked me ${count} time/s`)
-       } else {
-        console.log(`${name} Stop clicking me!`)
-       }
+
+
+function Home() {
+
+    const [name, setName] = useState ();
+
+
+    const updateName = () => {
+        setName("matilda");
     }
-
     return (
 
         <div>
-            <button className="home-btn" onClick={() => handleEvent("Matilda")}>
-                Click me!
+            <button className="home-btn" onClick={updateName}>
+               Set name
             </button>
+            <h2>Name: {name} </h2>
         </div>
 
     );
