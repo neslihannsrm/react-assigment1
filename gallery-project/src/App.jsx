@@ -5,20 +5,28 @@ import book3 from "./assets/brave-new-world-cover.jpg";
 import book4 from "./assets/fahrenheit-451-cover.jpg";
 import book5 from "./assets/normal-people-cover.jpg";
 import book6 from "./assets/little-women-cover.jpg";
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import Home from "./Pages/home.jsx";
+import About from "./Pages/About.jsx";
+import Navbar from "./Navbar.jsx";
+import "./App.css";
+
+
 
 function App() {
     return (
         <>
-            <div className="book-container">
-                <Books title="The Midnight Library" price="$14" image={book1}></Books>
-                <Books title="Little Prince" price="$9" image={book2}></Books>
-                <Books title="Brave New World" price="$10" image={book3}></Books>
-                <Books title="Fahrenheit 451" price="$12" image={book4}></Books>
-                <Books title="Normal People" price="$15" image={book5}></Books>
-                <Books title="Little Women" price="$17" image={book6}></Books>
-            </div> 
+        <BrowserRouter>
+        <Navbar></Navbar>
+        <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/about" element={<About/>}/>
+        </Routes>
+        </BrowserRouter>
         </>
     );
+    
 }
 
 export default App;
+

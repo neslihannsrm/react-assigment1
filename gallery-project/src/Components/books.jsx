@@ -10,8 +10,8 @@ function Books(props) {
     return (
         <div className="books">
             <img src={props.image} alt={props.title} className="img"></img>
-            <h2 className="title">{props.title || "title"}</h2>
-            <p className="price">{props.price || "price"}</p>
+            {props.title &&  <h2 className="title">{props.title}</h2>}
+            {props.title &&  <p className="price">{props.price}</p>}
         </div>
     );
 }
