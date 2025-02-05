@@ -42,6 +42,7 @@ function Contact() {
             id="age"
             value={age}
             onChange={(e) => setAge(e.target.value)}
+            min="1"
           />
         </div>
 
