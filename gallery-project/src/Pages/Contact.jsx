@@ -24,7 +24,7 @@ function Contact() {
 
   return (
     <div className="form-container">
-      <h2>Login to Book Store</h2>
+      <h2 className='login-title'>Login </h2>
       <form onSubmit={handleSubmit}>
         <div className="input-container">
           <label htmlFor="name">Name:</label>

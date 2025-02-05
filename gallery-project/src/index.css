@@ -19,7 +19,7 @@ body {
 .home-btn {
   font-size: 2rem;
   padding: 15px 25px;
-  background-color: #4169e1;
+  background-color: #bbbb71;
   color: white;
   border: none;
   border-radius: 5px;
@@ -83,7 +83,7 @@ body {
 }
 
 .nav-item:hover {
-  color: #4169e1;
+  color: #bbbb71;
   background-color: rgba(65, 105, 225, 0.1); 
   transform: scale(1.05); 
 }
@@ -103,7 +103,7 @@ body {
 
 /* Book Item Styling */
 .books {
-  border: 1px solid #4169e1;
+  border: 1px solid #bbbb71;
   border-radius: 10px;
   box-shadow: 5px 5px 5px black;
   padding: 20px;
@@ -129,7 +129,7 @@ body {
 
 .books .price {
   font-family: Arial, sans-serif;
-  color: #4169e1;
+  color: #bbbb71;
   font-weight: bold;
   font-size: 1.1rem;
   margin-top: 10px;
@@ -203,14 +203,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid #4169e1;
+  border: 2px solid #96a954;
   padding: 20px;
   border-radius: 10px;
   max-width: 400px;
   margin: 20px auto;
   background-color: #f4f4e8; 
 }
-
+.login-title {
+  padding: 15px;
+}
 .input-container {
   margin-bottom: 15px;
 }
@@ -230,7 +232,7 @@ body {
 }
 
 .submit-button {
-  background-color: #4169e1;
+  background-color: #bbbb71;
   color: white;
   padding: 10px 15px;
   border: none;
