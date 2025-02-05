@@ -4,7 +4,7 @@ import book3 from "../assets/brave-new-world-cover.jpg";
 import book4 from "../assets/fahrenheit-451-cover.jpg";
 import book5 from "../assets/normal-people-cover.jpg";
 import book6 from "../assets/little-women-cover.jpg";
-import "../books.css";
+import "../index.css";
 
 function Books(props) {
     return (

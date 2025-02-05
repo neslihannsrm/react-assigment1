@@ -8,25 +8,25 @@ body {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
-    display: flex; /* Flexbox kullanımı */
-    justify-content: center; /* Yatayda ortala */
-    align-items: center; /* Dikeyde ortala */
-    min-height: 100vh; /* Sayfa yüksekliğini tam ekran yap */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
 }
 
-/* Kitapları içeren konteyner */
+
 .book-container {
     display: flex;
-    justify-content: center; /* Kitapları yatayda ortala */
-    flex-wrap: wrap; /* Satır taşmasını sağla */
+    justify-content: center; 
+    flex-wrap: wrap; 
     gap:90px;
-    max-width: 100%; /* Konteynerin genişliğini sınırla */
+    max-width: 100%; 
     padding: 20px;
     margin-left: 6%;
 }
 
 .books{
-    border: 1px solid royalblue;
+    border: 1px solid #4169e1;
     border-radius: 10px;
     box-shadow: 5px 5px 5px black;
     padding: 20px;
