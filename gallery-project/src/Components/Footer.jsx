@@ -3,7 +3,7 @@ import "../index.css";
 function Footer() {
   return (
     <footer className="footer">
-      <p> My Website | All Rights Reserved</p>
+      <p> all rights are reserved</p>
     </footer>
   );
 }

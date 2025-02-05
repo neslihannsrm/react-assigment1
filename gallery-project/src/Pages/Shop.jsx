@@ -7,7 +7,7 @@ import book5 from "../assets/normal-people-cover.jpg";
 import book6 from "../assets/little-women-cover.jpg";
 import "../index.css";
 
-function About() {
+function Shop() {
     return (
         <div>
             <div className="book-container">
@@ -21,4 +21,4 @@ function About() {
         </div>
     );
 }
-export default About;
+export default Shop;
