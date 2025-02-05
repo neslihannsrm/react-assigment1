@@ -1,28 +1,25 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import '../index.css'; // Importing the CSS file
+import '../index.css';
 
 function Contact() {
   const [name, setName] = useState('');
   const [age, setAge] = useState('');
-  const [error, setError] = useState('');
 
-  
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!name || !age) {
-      setError('Please fill in all fields!');
-    } else {
-      setError('');
+
+    if (name && age) {
       alert(`Welcome, ${name}! Your age is: ${age}`);
+      setName('');
+      setAge('');
+    } else {
+      alert('Please fill in all fields!');
     }
   };
-
 
   const handleReset = () => {
     setName('');
     setAge('');
-    setError('');
   };
 
   return (
@@ -36,7 +33,6 @@ function Contact() {
             id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="input-field"
           />
         </div>
         <div className="input-container">
@@ -46,12 +42,8 @@ function Contact() {
             id="age"
             value={age}
             onChange={(e) => setAge(e.target.value)}
-            className="input-field"
           />
         </div>
-
-        
-        {error && <p className="error-message">{error}</p>}
 
         <div className="button-container">
           <button type="submit" className="submit-button">Log In</button>

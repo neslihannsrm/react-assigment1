@@ -14,6 +14,7 @@ body {
   background-color: rgb(244, 244, 232);
 }
 
+/* Home page */
 /*home Button Styling */
 .home-btn {
   font-size: 2rem;
@@ -35,6 +36,22 @@ body {
   align-items: center;
   justify-content: center;
   padding: 40px;
+  background-color: #4742427c;
+  font-size: 3em;
+  
+}
+.home-container {
+  background-image: url("./assets/secret-garden-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #f5eded;
+  
 }
 
 /* Navigation Styles */
@@ -194,11 +211,9 @@ body {
   background-color: #f4f4e8; 
 }
 
-
 .input-container {
   margin-bottom: 15px;
 }
-
 
 .input-field {
   padding: 10px;
@@ -208,13 +223,11 @@ body {
   margin-top: 5px;
 }
 
-
 .button-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-
 
 .submit-button {
   background-color: #4169e1;
@@ -225,7 +238,6 @@ body {
   cursor: pointer;
 }
 
-
 .reset-button {
   background-color: #ff6347;
   color: white;
@@ -234,7 +246,6 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
-
 
 .error-message {
   color: red;
