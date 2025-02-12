@@ -19,7 +19,7 @@ body {
 .home-btn {
   font-size: 2rem;
   padding: 15px 25px;
-  background-color: #bbbb71;
+  background-color: #96a954;
   color: white;
   border: none;
   border-radius: 5px;
@@ -83,7 +83,7 @@ body {
 }
 
 .nav-item:hover {
-  color: #bbbb71;
+  color: #96a954;
   background-color: rgba(65, 105, 225, 0.1); 
   transform: scale(1.05); 
 }
@@ -99,11 +99,12 @@ body {
   max-width: 100%;
   padding: 20px;
   margin-left: 6%;
+  
 }
 
 /* Book Item Styling */
 .books {
-  border: 1px solid #bbbb71;
+  border: 1px solid #96a954;
   border-radius: 10px;
   box-shadow: 5px 5px 5px black;
   padding: 20px;
@@ -111,12 +112,12 @@ body {
   text-align: center;
   max-width: 250px;
   transition: transform 0.3s ease-in-out;
-  
 }
 
 .books:hover {
   transform: scale(1.05); 
   box-shadow: 10px 10px 15px #00000033; 
+  cursor: pointer;
 }
 
 .books .title {
@@ -129,7 +130,7 @@ body {
 
 .books .price {
   font-family: Arial, sans-serif;
-  color: #bbbb71;
+  color: #96a954;
   font-weight: bold;
   font-size: 1.1rem;
   margin-top: 10px;
@@ -232,7 +233,7 @@ body {
 }
 
 .submit-button {
-  background-color: #bbbb71;
+  background-color: #96a954;
   color: white;
   padding: 10px 15px;
   border: none;
@@ -252,6 +253,21 @@ body {
 .error-message {
   color: red;
   margin-bottom: 15px;
+}
+.age-button {
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color:  #96a954;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.age-button:hover {
+  background-color:  #96a954;
 }
 
 /*Color Picker Page*/
