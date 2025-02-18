@@ -311,10 +311,6 @@ input[type="color"]{
   cursor: pointer;
 }
 
-
-
-
-
 /* Footer Styles */
 .footer {
   background-color:#f4f4e8;
@@ -331,3 +327,72 @@ input[type="color"]{
   margin-bottom: 5px;
 }
 
+/*To Read*/
+
+.container-toread {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #b4c577;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.title-toread {
+  margin: 20px;
+  color: #333;
+  background-color: #b4c577;
+  font-size: 24px;
+}
+
+.input-toread {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.addbookbtn-toread {
+  margin-left: 5px;
+  padding: 10px 15px;
+  background-color:#4A90E2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.addbookbtn-toread:hover {
+  background-color: #0056b3;
+}
+
+.ul-toread {
+  list-style: none;
+  padding: 0;
+}
+
+.il-toread {
+  background-color:#f4f4e8;
+  margin: 5px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.removebtn-toread {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.removebtn-toread:hover {
+  background: darkred;
+}
